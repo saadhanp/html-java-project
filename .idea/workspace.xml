@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56a6ef3a-12cd-4e34-b472-86716a4cd437" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlproject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/ContentGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/GetContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/ImageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/Link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/PageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/Paragraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/Site.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/Style.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/buildSite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/getColor.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2RijX98gmchtRgR19AlZ6QkRKh9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="content" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="ContentGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="content.ContentGenerator" />
+      <module name="htmlproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="content.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetTitle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="content.GetTitle" />
+      <module name="htmlproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="content.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="content.Main" />
+      <module name="htmlproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="content.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetTitle$GetTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="htmlproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="content.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="content.GetTitle" />
+      <option name="MAIN_CLASS_NAME" value="content.GetTitle$GetTitleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetTitle$GetTitleTest.TestNullContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="htmlproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="content.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="content.GetTitle" />
+      <option name="MAIN_CLASS_NAME" value="content.GetTitle$GetTitleTest" />
+      <option name="METHOD_NAME" value="TestNullContent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ContentGenerator" />
+        <item itemvalue="Application.GetTitle" />
+        <item itemvalue="JUnit.GetTitle$GetTitleTest.TestNullContent" />
+        <item itemvalue="JUnit.GetTitle$GetTitleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56a6ef3a-12cd-4e34-b472-86716a4cd437" name="Changes" comment="" />
+      <created>1687739833290</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687739833290</updated>
+      <workItem from="1687739834300" duration="1727000" />
+      <workItem from="1687811681258" duration="44856000" />
+      <workItem from="1688049096101" duration="1669000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
