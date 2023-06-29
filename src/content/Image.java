@@ -5,11 +5,10 @@ public class Image {
     private String width;
 
 
-
-    public Image(String filename, String width) {
+    public Image(String filename) {
         this.filename = filename;
-        this.width = width;
     }
+
 
     public String getFilename() {
         return filename;

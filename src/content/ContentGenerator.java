@@ -11,10 +11,10 @@ public class ContentGenerator {
     public static void main(String[] args) {
        // String Title = new content.GetTitle().toString();
 
-        Page p = new Page();
+        Page p = new Page("Page 1");
         Paragraph p1 = new Paragraph("P1 Title", "P1 Text", new ArrayList<Image>());
         p1.addText("abc");
-        p1.addImage(new Image("image1","300x300"));
+        p1.addImage(new Image("image1"));
 
 
          String expectedContent = "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 TRANSITIONAL//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">" + "\n" +

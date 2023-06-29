@@ -15,7 +15,6 @@ class Page {
     }
 
 
-    @Override
     public String generateContent() {
         String tillHead = "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 TRANSITIONAL//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">" + "\n" + "<html>" + "\n" + "<head>" + "\n" + "<title>" + this.title + "</title>" + "\n" + "</head>" + "\n";
         String bodyStart = "<body>\n";
@@ -27,7 +26,7 @@ class Page {
     }
 
 
-    @Override
+
     public void addParagraph(Paragraph p) {
        this.paragraphs.add(p);
     }

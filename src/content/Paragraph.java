@@ -16,6 +16,10 @@ public class Paragraph {
         this.images = images;
     }
 
+    public Paragraph(String title) {
+        this.title = title;
+    }
+
 
     public void addText(String s) {
         this.text = s;

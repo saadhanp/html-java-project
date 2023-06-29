@@ -1,19 +1,34 @@
 package content;
 
 public class Style {
-    private String bgcolor;
+    private String bgColor;
     private String title;
     private String titleColor;
     private String font;
     private String textColor;
+    private Site site;
 
-
-    public String getBgcolor() {
-        return bgcolor;
+    public Style(Site site) {
+        this.site = site;
     }
 
-    public void setBgcolor(String bgcolor) {
-        this.bgcolor = bgcolor;
+    public Site getSite() {
+        return site;
+    }
+
+    public void setSite(Site site) {
+        this.site = site;
+    }
+
+
+
+
+    public String getBgColor() {
+        return bgColor;
+    }
+
+    public void setBgColor(String bgcolor) {
+        this.bgColor = bgcolor;
     }
 
     public String getTitle() {

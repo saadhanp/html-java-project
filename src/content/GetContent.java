@@ -52,7 +52,7 @@ public class GetContent {
 
         @Test
         void TestNullContent() {
-            Page p = new Page();
+            Page p = new Page("Page 1");
             assertNull(p.generateContent());
         }
 
