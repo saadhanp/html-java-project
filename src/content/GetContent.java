@@ -48,6 +48,7 @@ public class GetContent {
         return fontcolor;
     }
 
+
     static class GetTitleTest {
 
         @Test

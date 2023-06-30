@@ -41,7 +41,15 @@ public class ContentGenerator {
         assertEquals(expectedContent, content);
     }
 
-    public String generateContent(Page p) {
-        return p.generateContent();
+    public String generateContent(Page pg) {
+        Paragraph[] paragraphs = pg.getParagraphs().toArray(new Paragraph[0]);
+        for (Paragraph paragraph : paragraphs) {
+            Image[] images = paragraph.getImages().toArray(new Image[0]);
+
+
+        }
+
+
+        return pg.generateContent();
     }
 }

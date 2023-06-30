@@ -31,4 +31,8 @@ public class Image {
             return "<img src=\"" + filename + "\n";
 
     }
+    public static void printImage(Image i) {
+        System.out.println(i.getFilename());
+        System.out.println(i.getWidth());
+    }
 }

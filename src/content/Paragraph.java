@@ -4,6 +4,8 @@ package content;
 import java.util.ArrayList;
 import java.util.List;
 
+import static content.Image.printImage;
+
 public class Paragraph {
     private String title;
     private String text;
@@ -21,8 +23,8 @@ public class Paragraph {
     }
 
 
-    public void addText(String s) {
-        this.text = s;
+    public void addText(String text) {
+        this.text = text;
     }
 
     public void addImage(Image image) {
@@ -65,4 +67,13 @@ public class Paragraph {
 
         return tillImages;
     }
+    public static void printParagraph(Paragraph p) {
+        System.out.println(p.getTitle());
+        System.out.println(p.getText());
+        Image[] images = p.getImages().toArray(new Image[0]);
+        for (Image image: images){
+            printImage(image);}
+
+    }
+
 }

@@ -17,6 +17,6 @@ class PageTest {
         p.addParagraph(p1);
         p.addParagraph(p2);
 
-        assertEquals("", p.getContent());
+        assertEquals("e", p.generateContent());
     }}
 

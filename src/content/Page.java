@@ -3,6 +3,9 @@ package content;
 import java.util.LinkedList;
 import java.util.List;
 
+import static content.Image.printImage;
+import static content.Paragraph.printParagraph;
+
 
 class Page {
     private String filename;
@@ -50,5 +53,13 @@ class Page {
     public List<Paragraph> getParagraphs() {
         return paragraphs;
     }
-}
+    public static void printPage(Page pg) {
+        Paragraph[] paragraphs = pg.getParagraphs().toArray(new Paragraph[0]);
+        System.out.println(pg.getFilename());
+        System.out.println(pg.getTitle());
+
+        for (Paragraph paragraph : paragraphs) {
+            Image[] images = paragraph.getImages().toArray(new Image[0]);
+            printParagraph(paragraph);
+}}}
 
