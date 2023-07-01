@@ -1,65 +1,50 @@
 package content;
 
 public class Style {
-    private String bgColor;
-    private String title;
-    private String titleColor;
-    private String font;
-    private String textColor;
-    private Site site;
+    String bgColor;
+    String title;
+    String titleColor;
+    String font;
+    String textColor;
 
-    public Style(Site site) {
-        this.site = site;
+
+    public String getStyle() {
+       String style = """
+                <style>
+                body {background-image: linear-gradient(180deg, @BACKCOLOR, white);}
+                                
+                .center {
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+                h1   {color: "@HEADCOLOR";
+                      font-family: @FONTSTYLE;
+                      text-align:center;
+                      }
+                                
+                h2   {color: @HEADCOLOR;
+                      font-family: @FONTSTYLE;
+                      text-align: justify;
+                      }
+                                
+                p    {color: @FONTCOLOR;
+                      font-family: @FONTSTYLE;
+                      padding: 30px;
+                      text-align: justify;
+                      background-color: white;
+                      box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
+                      font-size: 14px;
+                      }
+                                
+                </style>
+                """;
+
+        style = style.replaceAll("@HEADCOLOR", titleColor);
+        style = style.replaceAll("@FONTSTYLE", font);
+        style = style.replaceAll("@FONTCOLOR", textColor);
+        return style.replaceAll("@BACKCOLOR", bgColor);
+
     }
 
-    public Site getSite() {
-        return site;
-    }
-
-    public void setSite(Site site) {
-        this.site = site;
-    }
-
-
-
-
-    public String getBgColor() {
-        return bgColor;
-    }
-
-    public void setBgColor(String bgcolor) {
-        this.bgColor = bgcolor;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getTitleColor() {
-        return titleColor;
-    }
-
-    public void setTitleColor(String titleColor) {
-        this.titleColor = titleColor;
-    }
-
-    public String getFont() {
-        return font;
-    }
-
-    public void setFont(String font) {
-        this.font = font;
-    }
-
-    public String getTextColor() {
-        return textColor;
-    }
-
-    public void setTextColor(String textColor) {
-        this.textColor = textColor;
-    }
 }

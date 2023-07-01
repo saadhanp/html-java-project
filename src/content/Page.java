@@ -11,7 +11,9 @@ class Page {
     private String filename;
     private String title;
 
-    private final List<Paragraph> paragraphs = new LinkedList<>();
+    private String styleFileName;
+
+    private List<Paragraph> paragraphs = new LinkedList<>();
 
     public Page(String myPage) {
         this.title = myPage;
@@ -19,19 +21,27 @@ class Page {
 
 
     public String generateContent() {
-        String tillHead = "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 TRANSITIONAL//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">" + "\n" + "<html>" + "\n" + "<head>" + "\n" + "<title>" + this.title + "</title>" + "\n" + "</head>" + "\n";
-        String bodyStart = "<body>\n";
-        for (Paragraph p : this.paragraphs){
-            bodyStart = bodyStart + "\n" + p.generateContent() + "\n";
+        String tillHead = "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 TRANSITIONAL//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">" + "\n" +
+                "<html>" + "\n" +
+                "<head>" + "\n" +
+                "<title>" + title + "</title>" + "\n" +
+                "<style src= \"" + styleFileName + "\" >" +
+                "</head>" + "\n";
+        String body = "<body>";
+        for (Paragraph p : paragraphs){
+            body = body + "\n" + p.generateContent() + "\n";
         }
-        String bodyEnd = "</body>\n</html>\n";
-        return tillHead;
+        body = body + "</body>\n</html>\n";
+        return tillHead + body;
     }
 
 
 
     public void addParagraph(Paragraph p) {
-       this.paragraphs.add(p);
+       paragraphs.add(p);
+    }
+    public void setParagraphs(List<Paragraph> paragraphs) {
+        this.paragraphs = paragraphs;
     }
 
     public String getFilename() {
@@ -53,13 +63,9 @@ class Page {
     public List<Paragraph> getParagraphs() {
         return paragraphs;
     }
-    public static void printPage(Page pg) {
-        Paragraph[] paragraphs = pg.getParagraphs().toArray(new Paragraph[0]);
-        System.out.println(pg.getFilename());
-        System.out.println(pg.getTitle());
 
-        for (Paragraph paragraph : paragraphs) {
-            Image[] images = paragraph.getImages().toArray(new Image[0]);
-            printParagraph(paragraph);
-}}}
+    public void SetStyleFileName(String styleFileName) {
+        this.styleFileName = styleFileName;
+    }
+}
 

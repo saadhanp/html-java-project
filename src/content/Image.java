@@ -28,11 +28,12 @@ public class Image {
 
     public String generateContent() {
 
-            return "<img src=\"" + filename + "\n";
+        return "<img src=\"" + filename + " width=" + width + " /> \n";
 
     }
+
     public static void printImage(Image i) {
-        System.out.println(i.getFilename());
-        System.out.println(i.getWidth());
+            System.out.println(i.getFilename());
+            System.out.println(i.getWidth());
+        }
     }
-}

@@ -19,12 +19,14 @@ public class Paragraph {
     }
 
     public Paragraph(String title) {
-        this.title = title;
+        this(title, "", new ArrayList());
     }
 
 
-    public void addText(String text) {
+    public Paragraph addText(String text) {
         this.text = text;
+
+        return this;
     }
 
     public void addImage(Image image) {
@@ -57,19 +59,25 @@ public class Paragraph {
     }
 
     public String generateContent() {
-        String tillImages = this.text;
-        String images =  "<p>\n";
-        for (Image i : this.images){
-            images = images + "\n" + i.generateContent();
+        String content = "";
+        if (!this.title.equals("")) {
+            content = content + "<h2>" + title + "</h2> \n";
         }
-        String paragraphEnd = "</p>";
 
+        content = content + this.text;
+        content = content + "\n";
+        if (this.images.size() > 0) {
+            for (Image i : this.images) {
+                content = content + i.generateContent();
+            }
+        }
 
-        return tillImages;
+        return content;
     }
     public static void printParagraph(Paragraph p) {
-        System.out.println(p.getTitle());
-        System.out.println(p.getText());
+        if (p.getImages() == null){
+            return ;
+        }
         Image[] images = p.getImages().toArray(new Image[0]);
         for (Image image: images){
             printImage(image);}
